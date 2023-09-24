@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class puckhole : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D other) {
-        if(other.collider.tag == "Puck"){
-            Debug.Log("Entered");
-        }
-        
-    }
+    
+    public UnityEvent onPuckEntered;
+
+
     private void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("Entered");
         if(other.tag =="Puck"){
-            ScoreManager.instance.Addscore1();
+            Destroy(other.gameObject);
+            onPuckEntered.Invoke();
         }
         
     }

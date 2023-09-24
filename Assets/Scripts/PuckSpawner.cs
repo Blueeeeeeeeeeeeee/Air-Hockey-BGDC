@@ -39,4 +39,17 @@ public class PuckSpawner : MonoBehaviour
         if (transform.childCount >= MAX_PUCK) return true;
         return false;
     }
+    
+    IEnumerator CheckPuck()
+    {
+        yield return new WaitForSeconds(1f);
+        if (transform.childCount <= 0) spawnPuck();
+
+    }
+    
+
+    public void CheckStatus()
+    {
+        StartCoroutine(CheckPuck());
+    }
 }
