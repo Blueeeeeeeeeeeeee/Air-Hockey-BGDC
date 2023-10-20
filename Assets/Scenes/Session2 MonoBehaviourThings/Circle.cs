@@ -20,7 +20,7 @@ public class unitymonobehaviourstuff : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        B.MovePosition(B.position+movement*speed);
+        B.MovePosition(B.position+movement.normalized*speed);
     }
 
 }
