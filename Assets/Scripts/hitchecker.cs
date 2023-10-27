@@ -14,8 +14,19 @@ public class hitchecker : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.collider.tag=="Player"||other.collider.tag=="Enemy"){
-            animator.SetTrigger("triggerhit");
+            animator.SetBool("Hitted",true);
         }
 
+    }
+    /// <summary>
+    /// Sent when a collider on another object stops touching this
+    /// object's collider (2D physics only).
+    /// </summary>
+    /// <param name="other">The Collision2D data associated with this collision.</param>
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if(other.collider.tag=="Player"||other.collider.tag=="Enemy"){
+            animator.SetBool("Hitted",false);
+        }
     }
 }
