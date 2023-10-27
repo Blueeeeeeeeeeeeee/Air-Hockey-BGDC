@@ -13,9 +13,11 @@ public class hitchecker : MonoBehaviour
     /// <param name="other">The Collision2D data associated with this collision.</param>
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.collider.tag=="Player"||other.collider.tag=="Enemy"){
+        if(other.collider.tag!="Puck"){
             animator.SetBool("Hitted",true);
         }
+            
+
 
     }
     /// <summary>
@@ -25,8 +27,9 @@ public class hitchecker : MonoBehaviour
     /// <param name="other">The Collision2D data associated with this collision.</param>
     void OnCollisionExit2D(Collision2D other)
     {
-        if(other.collider.tag=="Player"||other.collider.tag=="Enemy"){
+        if(other.collider.tag!="Puck"){
             animator.SetBool("Hitted",false);
         }
+            
     }
 }
