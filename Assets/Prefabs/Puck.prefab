@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6727366120350750673}
   - component: {fileID: 7359087515023628130}
   - component: {fileID: 5174536687003809180}
-  - component: {fileID: 6797524215900770547}
   - component: {fileID: 665911269982411414}
+  - component: {fileID: 8364601337556888285}
   m_Layer: 0
   m_Name: Puck
   m_TagString: Puck
@@ -150,21 +150,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!111 &6797524215900770547
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6852932175666638949}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &665911269982411414
 Animator:
   serializedVersion: 5
@@ -186,3 +171,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8364601337556888285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6852932175666638949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f24bfd12d60294419c4b9977308f0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 665911269982411414}
