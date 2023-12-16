@@ -1167,7 +1167,7 @@ MonoBehaviour:
   uiSound: {fileID: 302693240}
   endText: {fileID: 1400383144}
   endUI: {fileID: 694158292}
-  WinScore: 10
+  WinScore: 3
   score: {fileID: 647132224}
 --- !u!82 &302693240
 AudioSource:
@@ -1783,7 +1783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -155.99995, y: -46}
+  m_AnchoredPosition: {x: -155.99994, y: -46}
   m_SizeDelta: {x: 111.492, y: 68.406}
   m_Pivot: {x: -1.5041724, y: 0.5}
 --- !u!114 &647132224

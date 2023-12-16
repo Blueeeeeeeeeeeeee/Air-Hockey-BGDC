@@ -26,5 +26,6 @@ public class soundmanager : MonoBehaviour
     }
     private void Save(){
         PlayerPrefs.SetFloat("SoundVolume",volumeSlider.value);
+        PlayerPrefs.Save();
     }
 }
