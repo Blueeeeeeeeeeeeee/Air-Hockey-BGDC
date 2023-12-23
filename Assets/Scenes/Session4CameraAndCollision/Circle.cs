@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -9,19 +10,12 @@ public class Session4 : MonoBehaviour
     Vector2 movement;
     public float speed=5f;
     public Rigidbody2D B;
-    public Animator animator;
     
     void Update()
     {
         movement.x=Input.GetAxisRaw("Horizontal");
         movement.y=Input.GetAxisRaw("Vertical");
 
-        if(Input.GetAxisRaw("Vertical")>0f||Input.GetAxisRaw("Horizontal")>0f){
-            animator.SetBool("Hitted",true);
-        }
-        else{
-            animator.SetBool("Hitted",false);
-        }
         if(Input.GetKey("r")==true){
             GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(); 
             if (bullet != null) {
