@@ -605,6 +605,12 @@ namespace Unity.VisualScripting.Generated.Aot
 	// UnityEngine.WindZone.op_Implicit
 	// UnityEngine.WindZone.op_Equality
 	// UnityEngine.WindZone.op_Inequality
+	// movement.op_Implicit
+	// movement.op_Equality
+	// movement.op_Inequality
+	// networkbutton.op_Implicit
+	// networkbutton.op_Equality
+	// networkbutton.op_Inequality
 	// unitymonobehaviourstuff.op_Implicit
 	// unitymonobehaviourstuff.op_Equality
 	// unitymonobehaviourstuff.op_Inequality
@@ -862,6 +868,7 @@ namespace Unity.VisualScripting.Generated.Aot
 	// UnityEngine.EventSystems.UIBehaviour.op_Inequality
 	// --------------- Plugin Stubs
 	// --------------- Asset Stubs
+	// --------------- Scene Stubs
 	// --------------- Scene Stubs
 	// --------------- Scene Stubs
 	// --------------- Scene Stubs
@@ -7761,6 +7768,76 @@ namespace Unity.VisualScripting.Generated.Aot
 		// UnityEngine.WindZone.op_Inequality
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void UnityEngine_WindZone_op_Inequality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 != arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// movement.op_Implicit
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void movement_op_Implicit()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			bool conversion = ((bool)(arg0));
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// movement.op_Equality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void movement_op_Equality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 == arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// movement.op_Inequality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void movement_op_Inequality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 != arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// networkbutton.op_Implicit
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void networkbutton_op_Implicit()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			bool conversion = ((bool)(arg0));
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// networkbutton.op_Equality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void networkbutton_op_Equality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 == arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// networkbutton.op_Inequality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void networkbutton_op_Inequality()
 		{
 			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
 			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);

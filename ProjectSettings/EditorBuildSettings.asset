@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenuTest.unity
     guid: 9ba05281113f4574b9711f8218670a1f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AirHockey.unity
     guid: 85f902b41ee611e49b4aaa9011a90f90
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MultiplayerMenu.unity
     guid: f91903fdeb85dae43ac1c0322008305d
+  - enabled: 1
+    path: Assets/Scenes/Session12Netcode/Session12.unity
+    guid: 267e252a77f358b43b84b6d3f499af6b
   m_configObjects: {}
